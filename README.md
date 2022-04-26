@@ -40,7 +40,7 @@ enum designElements{
 
 enum weekDays{Sunday, Monday, Tusday, Wednesday, Thursday, Friday, Saturday};
 
-init main() {
+int main() {
  enum weekDays today;
  today = Sunday;
  printf("Day %d", today+1);
@@ -52,15 +52,15 @@ init main() {
 #include <stdio.h>
 
 enum deck{
- club = 0;
- diamond = 5;
- hearts = 10;
- spades = 15;
-}
+ club = 0,
+ diamond = 5,
+ hearts = 10,
+ spades = 15,
+} card;
 
 int main() {
  card = spades;
- printf("Card value",card);
+ printf("Card value %d",card);
  return 0;
 }
 ```
