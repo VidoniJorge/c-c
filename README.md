@@ -18,3 +18,53 @@
   * **float** 4 Bytes 1.2E-38 to 3.4E+386 ( 6 decimal places)
   * **double** 8 Bytes 2.3E-308 to1.7E+30815 (15 decimal places)
   * **long double** 10 Bytes 3.4E-4932 to 1.1E+493219 (19 decimal places)
+
+## Void
+Especifica que no hay valor disponible. Se utiliza en 3 escenarios:
+* Para especificar el tipo de dato que retorna una funcion. void fun(){}
+* Para especificar que la funcion no acepta parametros. int fun(void){}
+* Para indicarle a un puntero que no nos importa el tipo de dato al que apunta.
+
+## ENUM
+
+``` c
+enum designElements{
+ ITALICS = 1;
+ BOLD = 2;
+ STRIKE = 3;
+}
+```
+
+``` c
+#include <stdio.h>
+
+enum weekDays{Sunday, Monday, Tusday, Wednesday, Thursday, Friday, Saturday};
+
+init main() {
+ enum weekDays today;
+ today = Sunday;
+ printf("Day %d", today+1);
+ return 0;
+}
+```
+
+``` c
+#include <stdio.h>
+
+enum deck{
+ club = 0;
+ diamond = 5;
+ hearts = 10;
+ spades = 15;
+}
+
+int main() {
+ card = spades;
+ printf("Card value",card);
+ return 0;
+}
+```
+
+
+
+
